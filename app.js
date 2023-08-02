@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(cors());
 
@@ -483,7 +483,7 @@ const data = [
   },
   {
     "product_id": 73,
-    "product_name": "The Curious Incident of the Dog in the Night-Time",
+    "product_name": "The Curious Incident",
     "category": "books",
     "description": "The Curious Incident of the Dog in the Night-Time is a novel by Mark Haddon. The novel is narrated by Christopher John Francis Boone, a fifteen-year-old boy with autism who sets out to solve the mystery of who killed his neighbor's dog.",
     "price": 12.99,
@@ -836,6 +836,7 @@ const data = [
     "product_id": 5012,
     "product_name": "Classic Trench Coat",
     "category": "Coat",
+    "key":"classic",
     "subcategory": "clothes",
 
     "target_gender": "unisex",
@@ -849,7 +850,7 @@ const data = [
         "author": "Alex Turner",
         "rating": 5,
         "review": "These shorts are perfect for my workouts. They're comfortable and stay in place."
-      },
+      },    
       {
         "author": "Emily White",
         "rating": 4,
@@ -1008,5 +1009,5 @@ app.get('/api/data', (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${3000}`);
+  console.log(`Server is running on http://localhost:${3001}`);
 });
