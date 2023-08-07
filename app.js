@@ -8,6 +8,22 @@ app.use(cors());
 
 // Sample data with the new entries categorized
 const data = [
+//   {
+//     "id":20000,
+//   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/4cd6690ef44564f3.jpg?q=50"
+// },
+// {"id":20001,
+//   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/463395d3de52d030.png?q=50"
+// },
+// {"id":20002,
+//   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/844/140/image/d3c33da936d92e8e.jpg?q=50"
+// },
+// {"id":20003,
+//   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/8f3a227f1526cba9.jpg?q=50"
+// },
+// {"id":20004,
+//   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/4cd6690ef44564f3.jpg?q=50"
+// },
   {
     "product_id": 1,
     "product_name": "Nike Air Max 97",
@@ -554,8 +570,8 @@ const data = [
   {
     "product_id": 5001,
     "product_name": "Elegant Black Dress",
-    "category": "dresses",
-    "subcategory": "clothes",
+    "subcategory": "dresses",
+    "category": "clothes",
     "target_gender": "woman",
     "description": "An elegant black dress perfect for formal occasions and evening events. The dress features a flattering A-line silhouette with a V-neckline and 3/4 sleeves.",
     "price": 120,
@@ -578,8 +594,8 @@ const data = [
   {
     "product_id": 5002,
     "product_name": "Men's Classic White Shirt",
-    "category": "shirts",
-    "subcategory": "clothes",
+    "subcategory": "shirts",
+    "category": "clothes",
 
     "target_gender": "man",
     "description": "A classic white shirt for men, perfect for both formal and casual occasions. The shirt is made of high-quality cotton and features a regular fit.",
@@ -603,8 +619,8 @@ const data = [
   {
     "product_id": 5003,
     "product_name": "Casual Denim Jacket",
-    "category": "jackets",
-    "subcategory": "clothes",
+    "subcategory": "jackets",
+    "category": "clothes",
 
     "target_gender": "unisex",
     "description": "A trendy denim jacket for casual everyday wear. The jacket has a classic design with front button closures and multiple pockets.",
@@ -628,8 +644,8 @@ const data = [
   {
     "product_id": 5004,
     "product_name": "Athletic Yoga Leggings",
-    "category": "leggings",
-    "subcategory": "clothes",
+    "subcategory": "leggings",
+    "category": "clothes",
 
     "target_gender": "woman",
     "description": "High-performance yoga leggings designed for maximum comfort and flexibility during workouts. The leggings have a moisture-wicking fabric and a supportive waistband.",
@@ -653,8 +669,8 @@ const data = [
   {
     "product_id": 5005,
     "product_name": "Stylish Linen Shirt",
-    "category": "shirts",
-    "subcategory": "clothes",
+    "subcategory": "shirts",
+    "category": "clothes",
 
     "target_gender": "man",
     "description": "A stylish linen shirt for men, perfect for summer and casual occasions. The shirt features a relaxed fit and a button-down collar.",
@@ -678,8 +694,8 @@ const data = [
   {
     "product_id": 5006,
     "product_name": "Floral Maxi Dress",
-    "category": "dresses",
-    "subcategory": "clothes",
+    "subcategory": "dresses",
+    "category": "clothes",
 
     "target_gender": "woman",
     "description": "A beautiful floral maxi dress, perfect for summer and beach outings. The dress features a flowy design with a halter neck and a cinched waist.",
@@ -703,8 +719,8 @@ const data = [
   {
     "product_id": 5007,
     "product_name": "Men's Casual Polo Shirt",
-    "category": "shirts",
-    "subcategory": "clothes",
+    "subcategory": "shirts",
+    "category": "clothes",
 
     "target_gender": "man",
     "description": "A comfortable and casual polo shirt for men, suitable for various everyday activities. The shirt is made of breathable fabric and features a classic polo collar.",
@@ -728,8 +744,8 @@ const data = [
   {
     "product_id": 5008,
     "product_name": "Cozy Oversized Sweater",
-    "category": "sweaters",
-    "subcategory": "clothes",
+    "subcategory": "sweaters",
+    "category": "clothes",
 
     "target_gender": "woman",
     "description": "A cozy oversized sweater for women, ideal for staying warm during colder days. The sweater features a loose fit and a stylish cable-knit pattern.",
@@ -753,8 +769,8 @@ const data = [
   {
     "product_id": 5009,
     "product_name": "Classic Tailored Suit",
-    "category": "suits",
-    "subcategory": "clothes",
+    "subcategory": "suits",
+    "category": "clothes",
 
     "target_gender": "man",
     "description": "A classic tailored suit for men, suitable for formal events and business occasions. The suit includes a jacket and trousers with a timeless design.",
@@ -778,8 +794,8 @@ const data = [
   {
     "product_id": 5010,
     "product_name": "Active Performance Shorts",
-    "category": "shorts",
-    "subcategory": "clothes",
+    "subcategory": "shorts",
+    "category": "clothes",
 
     "target_gender": "unisex",
     "description": "High-performance active shorts suitable for various sports and workouts. The shorts are made of moisture-wicking fabric and have a stretchy waistband.",
@@ -807,8 +823,8 @@ const data = [
   {
     "product_id": 5011,
     "product_name": "Multicoloured Print Dress",
-    "category": "dress",
-    "subcategory": "clothes",
+    "subcategory": "dress",
+    "category": "clothes",
 
     "target_gender": "unisex", 
     "description": "Multicoloured floral printed woven fit and flare dress, has shoulder straps, sleeveless, concealed zip closure, and flared hem.",
@@ -835,9 +851,9 @@ const data = [
    {
     "product_id": 5012,
     "product_name": "Classic Trench Coat",
-    "category": "Coat",
+    "subcategory": "Coat",
     "key":"classic",
-    "subcategory": "clothes",
+    "category": "clothes",
 
     "target_gender": "unisex",
     "description": "High-performance active shorts suitable for various sports and workouts. The shorts are made of moisture-wicking fabric and have a stretchy waistband.",
