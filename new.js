@@ -49,7 +49,7 @@ app.post('/login', async (req, res) => {
   try {
     const userObj = await user.findOne({ username });
     if (!userObj || userObj.password !== password) {
-      return res.status(401).json({ msg: 'Invalid credentials' });
+      return res.status(401).json({ msg: 'Invalid credentials //' });
     }
 
     return res.json({ msg: 'Successfully signed in' });
