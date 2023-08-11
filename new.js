@@ -10,9 +10,9 @@ const { config } = require('dotenv');
   const JwtKey='E-commerce';
   app.use(express.json());
   app.use(cors());
-  const PORT= 5000;
+  const PORT= process.env.mongourl || 5000;
 
-  
+  mongoose.set('strictQuery',false);
   mongoose
     .connect(process.env.mongourl, {    
       useNewUrlParser: true,
