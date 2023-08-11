@@ -1,7 +1,7 @@
   
   const express = require('express');
   const cors = require('cors');
-  // require('dotenv')=config();
+  require('dotenv').config();
   //jjj
   const mongoose = require('mongoose');
   const user = require('./userdetails'); // Assign the result of require to a variable
@@ -10,7 +10,7 @@
   const JwtKey='E-commerce';
   app.use(express.json());
   app.use(cors());
-  const PORT= process.env.mongourl || 5000;
+  const PORT = process.env.PORT || 5000;
 
   mongoose.set('strictQuery',false);
   mongoose
