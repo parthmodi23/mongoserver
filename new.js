@@ -6,7 +6,6 @@
   const user = require('./userdetails'); // Assign the result of require to a variable
   const app = express(); // Create an instance of Express
   const Jwt = require('jsonwebtoken');
-const { config } = require('dotenv');
   const JwtKey='E-commerce';
   app.use(express.json());
   app.use(cors());
