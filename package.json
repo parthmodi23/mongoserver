@@ -10,10 +10,7 @@
   },
   "scripts": {
     
-    
-      "start": "concurrently \"node -r dotenv/config new.js\" \"node app.js\""
-    
-    
+      "start": "node -r dotenv/config new.js"
     }
         
   }
