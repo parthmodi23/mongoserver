@@ -1,7 +1,7 @@
   
   const express = require('express');
   const cors = require('cors');
-  require('dotenv')=config();
+  // require('dotenv')=config();
   const mongoose = require('mongoose');
   const user = require('./userdetails'); // Assign the result of require to a variable
   const app = express(); // Create an instance of Express
