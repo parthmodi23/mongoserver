@@ -10,7 +10,7 @@
   },
   "scripts": {
     
-      "start": "node -r dotenv/config new.js",
+      "start:new": "node -r dotenv/config new.js",
   "start:app": "node app.js"
     }
         
