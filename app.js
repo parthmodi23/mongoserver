@@ -25,13 +25,15 @@ const data = [
 //   "offerimage":"https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/4cd6690ef44564f3.jpg?q=50"
 // },
   {
-    "product_id": 1,
+    "product_id": 1,                  
     "product_name": "Nike Air Max 97",
     "category": "shoes",
     "target_gender": "man",
     "description": "The Nike Air Max 97 is a classic running shoe that has been re-released in a variety of colors and styles. It features a comfortable Air Max cushioning system and a sleek, minimalist design.",
     "price": 120.00,
     "stock": 100,
+    "rating": 4,
+
     "company_name": "Nike",
     "product_images": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/xz10qxggewfcr0u1hkhw/air-max-97-shoes-EBZrb8.png",
     "reviews": [
@@ -55,6 +57,7 @@ const data = [
     "description": "The Adidas Ultraboost 22 is a running shoe that features a comfortable Boost cushioning system and a Primeknit upper. It's designed to provide support and energy return for long-distance runs.",
     "price": 180.00,
     "stock": 50,
+    "rating": 5,
     "company_name": "Adidas",
     "product_images": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1d6ba27577314b70a86aad9100ef305f_9366/Ultraboost_22_Shoes_White_GX5459_06_standard.jpg",
     "reviews": [

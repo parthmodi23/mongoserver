@@ -1,23 +1,25 @@
   // // index.js (your backend entry file)
   const express = require('express');
   const cors = require('cors');
+  require('dotenv')=config();
   const mongoose = require('mongoose');
   const user = require('./userdetails'); // Assign the result of require to a variable
   const app = express(); // Create an instance of Express
   const Jwt = require('jsonwebtoken');
+const { config } = require('dotenv');
   const JwtKey='E-commerce';
   app.use(express.json());
   app.use(cors());
+  const PORT=process.env.PORT || 5000;
 
-  const mongourl =
-    'mongodb+srv://pmodi0705:pymjNfFR30tPIIZr@cluster0.1kls1uz.mongodb.net/?retryWrites=true&w=majority';
+  
   mongoose
-    .connect(mongourl, {
+    .connect(process.env.mongourl, {    
       useNewUrlParser: true,
     })
     .then(() => {
       console.log('Connected to MongoDB');
-    })
+    })   
     .catch((e) => console.log('Error connecting to MongoDB:', e));
 
   // const User =mongoose.model("UserInfo");
@@ -29,7 +31,7 @@
       const existingUser = await user.findOne({ username });
   
       if (existingUser) {
-        return res.status(400).json({ msg: 'User already exists' });
+        return res.status(400).json({ msg: 'Username already exists\nplease sign in' });
       }
   
       const newUser = new user({ username, password });
@@ -56,8 +58,12 @@
   
     try {
       const userObj = await user.findOne({ username });
-      if (!userObj || userObj.password !== password) {
-        return res.status(401).json({ msg: 'Invalid credentials //' });
+      if (!userObj){
+        return res.status(401).json({ msg: 'Invalid Username\nPlease Create a Account' });
+      }else if(userObj.password !== password){
+        return res.status(401).json({msg:'Password is incorrect'})
+      }else if (!userObj || userObj.password !== password) {
+        return res.status(401).json({ msg: 'Invalid credentials' });
       }
       Jwt.sign({ userObj }, JwtKey, (err, token) => {
         if (err) {
@@ -97,6 +103,6 @@
 
   // ... (Start the server and other necessary code)
 
-  app.listen(5000, () => {
-    console.log('Server started on http://localhost:5000');
+  app.listen(PORT, () => {
+    console.log(`Server started on http://localhost:${PORT}`);
   });
