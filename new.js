@@ -10,7 +10,7 @@ const { config } = require('dotenv');
   const JwtKey='E-commerce';
   app.use(express.json());
   app.use(cors());
-  const PORT=process.env.PORT || 5000;
+  const PORT=process.env.PORT || 3000;
 
   
   mongoose
