@@ -265,7 +265,7 @@ const data = [
       "description": "The New Balance 574 is a classic running shoe that has been around for decades. It features a comfortable ENCAP midsole and a durable outsole. It's perfect for everyday wear.",
       "price": 100.00,
       "stock": 100,
-      "company_name": "New Balance",
+      "company_name": "Balance",
       "product_images": "https://nb.scene7.com/is/image/NB/ptrvlfg4_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440",
       "reviews": [
         {
