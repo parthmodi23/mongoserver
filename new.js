@@ -12,7 +12,6 @@
   app.use(cors());
   const PORT = process.env.PORT || 5000;
 
-  mongoose.set('strictQuery',false);
   mongoose
     .connect(process.env.mongourl, {    
       useNewUrlParser: true,
@@ -699,7 +698,7 @@ const data = [
       "price": 45,
       "stock": 50,
       "company_name": "Men'sStyleCo",
-      "product_images": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/q/r/d/s-st2-vebnor-original-imagpv9ahx6dukkr.jpeg?q=70",
+      "product_images": "https://m.media-amazon.com/images/I/61qKBlv1H6L._UX679_.jpg",
       "reviews": [
         {
           "author": "John Smith",
@@ -724,7 +723,7 @@ const data = [
       "price": 70,
       "stock": 40,
       "company_name": "DenimVibe",
-      "product_images": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/m/f/n/m-no-denim-jacket-for-women-and-girls-qtsy-original-imagagtkegejahxg-bb.jpeg?q=70",
+      "product_images": "https://m.media-amazon.com/images/I/91k5PkrM-SL._AC_UY1100_.jpg",
       "reviews": [
         {
           "author": "Laura Adams",
