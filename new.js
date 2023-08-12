@@ -985,6 +985,8 @@ const data = [
     const productId = req.query.id;
     const subcategory = req.query.sub;
     const target_gender = req.query.g;
+    const company_name = req.query.c;
+
   
     if (category && productId && subcategory && target_gender) {
       // If all parameters are provided, return the matching item
@@ -1093,13 +1095,26 @@ const data = [
           target_genders.includes(item.target_gender)
       );
       res.json(filteredData);
-    } else if (subcategory) {
+    } else if (subcategory && company_name) {
+      // If 'sub' and 'g' parameters are provided, filter the data based on both
+      const company_name = Array.isArray(company_name) ? company_name : [company_name];
+      const filteredData = data.filter(
+        (item) =>
+          item.subcategory === subcategory &&
+          company_name.includes(item.company_name)
+      );
+      res.json(filteredData);
+      }else if (subcategory) {
       // If only 'sub' parameter is provided, filter the data based on the 's' query parameter
       const filteredData = data.filter((item) => item.subcategory === subcategory);
       res.json(filteredData);
     } else if (target_gender) {
       // If only 'sub' parameter is provided, filter the data based on the 's' query parameter
       const filteredData = data.filter((item) => item.target_gender === target_gender);
+      res.json(filteredData);
+    }else if (company_name) {
+      // If only 'sub' parameter is provided, filter the data based on the 's' query parameter
+      const filteredData = data.filter((item) => item.company_name === company_name);
       res.json(filteredData);
     } else if (category) {
       // If only 's' parameter is provided, filter the data based on the 's' query parameter
