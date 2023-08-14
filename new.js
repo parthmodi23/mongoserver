@@ -304,32 +304,29 @@ const data = [
         }
       ]
     },
-    
-  
-  
-    {
-      "product_id": 9,
-      "product_name": "Vans Old Skool",
-      "category": "shoes",
-      "target_gender": "unisex",
-      "description": "The Vans Old Skool is a classic skate shoe that has been around for decades. It features a comfortable canvas upper and a vulcanized rubber sole. It's perfect for everyday wear.",
-      "price": 70.00,
-      "stock": 100,
-      "company_name": "Vans",
-      "product_images": "https://images.vans.com/is/image/Vans/VN0A4BV5_JV6_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0",
-      "reviews": [
-        {
-          "author": "John Smith",
-          "rating": 5,
-          "review": "These shoes are amazing! They're so comfortable and stylish. I highly recommend them."
-        },
-        {
-          "author": "Jane Doe",
-          "rating": 4,
-          "review": "I love these shoes! They're perfect for everyday wear. They're a little bit on the expensive side, but they're worth it."
-        }
-      ]
-    },
+    // {
+    //   "product_id": 9,
+    //   "product_name": "Vans Old Skool",
+    //   "category": "shoes",
+    //   "target_gender": "unisex",
+    //   "description": "The Vans Old Skool is a classic skate shoe that has been around for decades. It features a comfortable canvas upper and a vulcanized rubber sole. It's perfect for everyday wear.",
+    //   "price": 70.00,
+    //   "stock": 100,
+    //   "company_name": "Vans",
+    //   "product_images": "https://images.vans.com/is/image/Vans/VN0A4BV5_JV6_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0",
+    //   "reviews": [
+    //     {
+    //       "author": "John Smith",
+    //       "rating": 5,
+    //       "review": "These shoes are amazing! They're so comfortable and stylish. I highly recommend them."
+    //     },
+    //     {
+    //       "author": "Jane Doe",
+    //       "rating": 4,
+    //       "review": "I love these shoes! They're perfect for everyday wear. They're a little bit on the expensive side, but they're worth it."
+    //     }
+    //   ]
+    // },
     {
       "product_id": 10,
       "product_name": "Apple iPhone 13 Pro",
@@ -465,6 +462,52 @@ const data = [
       "product_images":
         "https://m.media-amazon.com/images/I/61GA2mAD4KL._SX679_.jpg",
   
+      "reviews": [
+        {
+          "author": "John Smith",
+          "rating": 5,
+          "review": "This phone is amazing! It's so powerful and the camera is incredible. I highly recommend it."
+        },
+        {
+          "author": "Jane Doe",
+          "rating": 4,
+          "review": "I love this phone! It's perfect for everyday use. It's a little bit on the expensive side, but it's worth it."
+        }
+      ]
+    },
+     {
+      "product_id": 16,
+      "product_name": "LAVA Z3",
+      "category": "mobile",
+      "target_gender": "male",
+      "description": "The Lava Mobile is a high-end smartphone that features a powerful A15 Bionic chip, a triple-lens rear camera system, and a Super Retina XDR display.",
+      "price": 566,
+      "stock": 100,
+      "company_name": "LAVA",
+      "product_images": "https://m.media-amazon.com/images/I/51EknP3PutL._SX679_.jpg",
+      "reviews": [
+        {
+          "author": "John Smith",
+          "rating": 5,
+          "review": "This phone is amazing! It's so powerful and the camera is incredible. I highly recommend it."
+        },
+        {
+          "author": "Jane Doe",
+          "rating": 4,
+          "review": "I love this phone! It's perfect for everyday use. It's a little bit on the expensive side, but it's worth it."
+        }
+      ]
+    },
+    {
+      "product_id": 17,
+      "product_name": "Readmi Mobile 5s",
+      "category": "mobile",
+      "target_gender": "male",
+      "description": "The Readmi is a high-end smartphone that features a powerful A15 Bionic chip, a triple-lens rear camera system, and a Super Retina XDR display.",
+      "price": 566,
+      "stock": 100,
+      "company_name": "LAVA",
+      "product_images": "https://m.media-amazon.com/images/I/51rqcKld5JL._SX300_SY300_QL70_FMwebp_.jpg",
       "reviews": [
         {
           "author": "John Smith",
